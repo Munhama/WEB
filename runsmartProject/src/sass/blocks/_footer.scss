@@ -29,6 +29,7 @@
         color: #ffffff;
         &:hover {
             color: #ffffff;
+            filter: invert(20%);
         }
     }
     &__social-item {
@@ -42,6 +43,9 @@
         border: solid 2px #ffffff;
         img {
             height: 27px;
+        }
+        &:hover {
+            filter: invert(20%);
         }
     }
     &__social {
