@@ -7,12 +7,22 @@
         justify-content: space-between;
         margin-top: 65px;
     }
-    &__icon {
+    &__item {
         width: 250px;
-        img {
-            display: block;
-            margin: 0 auto;
-            margin-bottom: 38px;
+    }
+    &__icon {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 38px;
+        &_animated {
+            // animation: heartbeat 1.5s ease infinite;
+            animation-name: heartbeat;
+            animation-duration: 1.5s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
         }
     }
     &__subtitle {
@@ -43,11 +53,11 @@
         &__wrapper {
             margin-top: 55px;
         }
-        &__icon {
+        &__item {
             width: 220px;
-            img {
-                margin-bottom: 28px;
-            }
+        }
+        &__icon {
+            margin-bottom: 28px;
         }
         &__subtitle {
             font-size: 16px;
@@ -65,13 +75,13 @@
         &__wrapper {
             margin-top: 45px;
         }
-        &__icon {
+        &__item {
             &:nth-child(-n+2) {
                 margin-right: 15px;
             }
-            img {
-                margin-bottom: 25px;
-            }
+        }
+        &__icon {
+            margin-bottom: 25px;
         }
         &__subtitle {
             font-size: 14px;
@@ -89,13 +99,13 @@
         &__wrapper {
             margin-top: 35px;
         }
-        &__icon {
+        &__item {
             &:nth-child(-n+2) {
                 margin-right: 15px;
             }
-            img {
-                margin-bottom: 20px;
-            }
+        }
+        &__icon {
+            margin-bottom: 20px;
         }
         &__subtitle {
             font-size: 13px;
