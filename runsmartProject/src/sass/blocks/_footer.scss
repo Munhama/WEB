@@ -1,0 +1,103 @@
+.footer {
+    height: 630px;
+    position: relative;
+    &__info {
+        padding: 50px 68px 60px 68px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 460px;
+        height: 270px;
+        background-color: $main-color;
+    }
+    &__addr {
+        margin-bottom: 36px;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 500;
+        text-align: center;
+        color: #ffffff;
+    }
+    &__phone {
+        display: block;
+        margin-bottom: 38px;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 700;
+        text-align: center;
+        color: #ffffff;
+        &:hover {
+            color: #ffffff;
+            filter: invert(20%);
+        }
+    }
+    &__social-item {
+        margin: 0 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: solid 2px #ffffff;
+        img {
+            height: 27px;
+        }
+        &:hover {
+            filter: invert(20%);
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    iframe {
+        width: 100%;
+        height: 630px;
+        border: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .footer {
+        &__info {
+            width: 440px;
+            height: 250px;
+        }
+        &__addr {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        &__phone {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        &__social-item {
+            width: 45px;
+            height: 45px;
+            img {
+                height: 25px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        &__info {
+            padding: 10px;
+            top: 630px;
+            width: 100%;
+            height: 120px;
+        }
+        &__addr {
+            margin-bottom: 10px;
+        }
+        &__phone {
+            margin-bottom: 10px;
+        }
+    }
+}
