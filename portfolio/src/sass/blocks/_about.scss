@@ -1,7 +1,6 @@
 .about {
     padding-top: 120px;
     &__wrapper {
-        padding-left: 50px;
         display: grid;
         grid-template-columns: 400px 570px;
         grid-template-rows: minmax(245px, auto) minmax(255px, auto);
