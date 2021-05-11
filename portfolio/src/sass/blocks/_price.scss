@@ -4,15 +4,15 @@
         margin-top: 60px;
         padding: 0 50px;
         display: grid;
-        grid-template: repeat(3, 44px) / 370px 370px;
-        grid-auto-rows: 44px;
+        grid-template: repeat(3, minmax(44px,auto)) / 370px 370px;
+        grid-auto-rows: minmax(44px,auto);
         row-gap: 15px;
         justify-content: space-between;
     }
     &__item {
         position: relative;
         display: grid;
-        grid-template: repeat(2, 21px) / repeat(2, auto);
+        grid-template: repeat(2, minmax(21px,auto)) / repeat(2, auto);
         row-gap: 5px;
         padding-left: 25px;
         &:before {
