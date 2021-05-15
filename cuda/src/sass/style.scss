@@ -30,8 +30,16 @@
     } 
 }
 
+.divider {
+    width: 87px;
+    height: 4px;
+    opacity: .15;
+    background-color: #000000;
+    margin: 21px auto 0 auto;
+}
+
 @import 'blocks/header';
 @import 'blocks/home';
-
+@import 'blocks/about';
 
 @import 'blocks/media';
